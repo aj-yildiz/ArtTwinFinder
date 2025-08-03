@@ -7,3 +7,5 @@ Given a query artwork, the system finds the most visually similar artworks from 
 
 # API DOCUMENTATION :
 https://api.artic.edu/docs/
+https://openaccess-api.clevelandart.org/#appendix-d
+https://metmuseum.github.io/
