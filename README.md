@@ -9,3 +9,25 @@ Given a query artwork, the system finds the most visually similar artworks from 
 https://api.artic.edu/docs/
 https://openaccess-api.clevelandart.org/#appendix-d
 https://metmuseum.github.io/
+
+
+Embed each artwork with OpenAI’s **CLIP (ViT-B/32)** to produce vector representations, then given a **query image** (by URL or upload), retrieve the most visually/semantically similar artworks via cosine similarity.
+
+
+The provided `Artwork-Similarity-Search.ipynb` implements the core pipeline:
+1. **Fetch** public-domain artworks and metadata from the three museum APIs.
+2. **Download** their images.
+3. **Embed** each image with CLIP and normalize the feature vectors.
+4. **Serialize / cache** embeddings and associated metadata to avoid repeated computation.
+5. **Query logic**: given a new image, compute its embedding and find nearest neighbors in the corpus.
+6. **Visual evaluation**: display top-k similar artworks for a sample query to sanity-check retrieval quality.
+
+## 📦 Dependencies
+
+Install prerequisites (ideally in a virtualenv):
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install torch ftfy regex tqdm requests Pillow scikit-learn numpy
+pip install git+https://github.com/openai/CLIP.git
