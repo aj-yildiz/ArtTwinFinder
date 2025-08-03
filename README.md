@@ -1,7 +1,7 @@
 # Artwork-Similarity-Search
 A machine learning-powered art recommender and visual similarity search using open museum images and CLIP embeddings.
 
-This project aims to understand the similarity between the artwork displayed in Instute of Art Chicago. 
+This project aims to understand the similarity between the artwork displayed in Instute of Art Chicago, Metropolitan Museum of Art, and Cleveland Art Museum. 
 
 Given a query artwork, the system finds the most visually similar artworks from 1000+ open-access images using CLIP embeddings.
 
