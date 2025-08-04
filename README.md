@@ -24,13 +24,3 @@ The provided `Artwork-Similarity-Search.ipynb` implements the core pipeline:
 4. **Serialize / cache** embeddings and associated metadata to avoid repeated computation.
 5. **Query logic**: given a new image, compute its embedding and find nearest neighbors in the corpus.
 6. **Visual evaluation**: display top-k similar artworks for a sample query to sanity-check retrieval quality.
-
-## 📦 Dependencies
-
-Install prerequisites (ideally in a virtualenv):
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install --upgrade pip setuptools wheel
-pip install torch ftfy regex tqdm requests Pillow scikit-learn numpy
-pip install git+https://github.com/openai/CLIP.git
