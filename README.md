@@ -10,7 +10,9 @@ Apart from the limitations in the API (especially the MET), CLIP embeddings are 
 
 # API DOCUMENTATION :
 https://api.artic.edu/docs/
+
 https://openaccess-api.clevelandart.org/#appendix-d
+
 https://metmuseum.github.io/
 
 
