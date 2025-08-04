@@ -8,6 +8,14 @@ Given a query artwork, the system finds the most visually similar artworks from 
 
 Apart from the limitations in the API (especially the MET), CLIP embeddings are semantic, so the results are not purely visual—they can capture abstract features, artist styles, or text associations.
 
+# KEY FEATURES 
+
+Voice narration: Each artwork and search result is accompanied by an auto-generated audio description using Google Text-to-Speech (gTTS), so users can listen as well as view.
+
+Concurrent image downloading: Speeds up dataset construction by downloading images in parallel using Python’s concurrent.futures.ThreadPoolExecutor.
+
+Caching: Embeddings and metadata are serialized to disk to avoid repeated computation and enable fast retrieval.
+
 # API DOCUMENTATION :
 https://api.artic.edu/docs/
 
