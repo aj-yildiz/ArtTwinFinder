@@ -5,6 +5,8 @@ This project aims to understand the similarity between the artwork displayed in 
 
 Given a query artwork, the system finds the most visually similar artworks from 1000+ open-access images using CLIP embeddings.
 
+Apart from the limitations in the API (especially the MET), CLIP embeddings are semantic, so the results are not purely visual—they can capture abstract features, artist styles, or text associations.
+
 # API DOCUMENTATION :
 https://api.artic.edu/docs/
 https://openaccess-api.clevelandart.org/#appendix-d
